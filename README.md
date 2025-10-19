@@ -1,5 +1,3 @@
-## 不用electron，直接web的，用这个链接：https://github.com/iamdarcy/hioshop-admin-web    
-
 ### 海风小店，开源商城（后台管理端VUE）
 
 + 基于开源项目NideShop重建，精简了一些功能的同时完善了一些功能，并重新设计了UI
@@ -16,7 +14,6 @@ https://www.bilibili.com/video/av89568075
 #### 本项目需要配合  
 微信小程序：https://github.com/iamdarcy/hioshop-miniprogram  
 服务端： https://github.com/iamdarcy/hioshop-server   
-web版管理后台：https://github.com/iamdarcy/hioshop-admin-web  
 
 线上demo：[https://demo.qilelab.com/hioshop  ](https://demo.qilelab.com/hioshop/)  
 用户名：qilelab.com    
@@ -61,7 +58,7 @@ web版管理后台：https://github.com/iamdarcy/hioshop-admin-web
 ### 本地开发环境配置
 + 克隆项目到本地
 ```
-git clone https://github.com/iamdarcy/hioshop-admin
+git clone https://github.com/iamdarcy/hioshop-admin-web  
 ```
 + 安装依赖
 ```
@@ -70,20 +67,8 @@ npm install
 
 如果安装不成功，百度搜索cnpm，用淘宝源代替，替换后，用cnpm i进行安装依赖  
 
-安装依赖后启动后会出现一个问题。
 
-<img width="600" src="https://raw.githubusercontent.com/iamdarcy/hiolabs/master/git-images/error.jpg"/>
-
-这个问题是Element-ui自带的。解决方法：
-
-在node_modules 搜索:  div class="el-form-item__label-wrap" style={style}  
-然后在语句中加上单引号就可以了。
-
-<img width="600" src="https://raw.githubusercontent.com/iamdarcy/hiolabs/master/git-images/before.jpg"/>
-
-<img width="600" src="https://raw.githubusercontent.com/iamdarcy/hiolabs/master/git-images/after.jpg"/>
-
-又出现了另一个问题：Object.fromEntries is not a function
+如果出现这个问题：Object.fromEntries is not a function
 看下面这篇文章进行解决：
 https://www.cnblogs.com/ykbk/p/16615610.html
 
@@ -95,7 +80,7 @@ npm run dev
 
 + build 打包成静态文件
 ```
-npm run build:web 或者 sudo npm run build:web
+npm run build:prod 或者 sudo npm run build:prod  
 ```
 
 生成的静态文件在dist的web文件夹中，上传到服务器就可以在浏览器中打开了。
@@ -107,10 +92,6 @@ npm run build:web 或者 sudo npm run build:web
 + 用户列表：用户的一些使用踪迹
 + 店铺设置：广告列表，公告管理，运费模板（可以根据地区设置相应的运费），管理员
 
-### 最近更新 
-- 12.14 新增生成分享图的功能  
-<img width="600" src="https://images.gitee.com/uploads/images/2020/1118/090429_8fc928b0_1794996.jpeg"/>  
-
 - 项目地址  
 后台管理：https://github.com/iamdarcy/hioshop-admin  
 服务端： https://github.com/iamdarcy/hioshop-server  
@@ -118,9 +99,11 @@ npm run build:web 或者 sudo npm run build:web
 
 - 本项目会持续更新和维护，喜欢别忘了 Star，有问题可通过微信、QQ群联系我，谢谢您的关注。
 - 我的微信号是lookgxl，加群时回答这个问题即可入群。  
-海风小店小程序商城1群 824781955（已满）  
-海风小店小程序商城2群 932101372（已满）    
-海风小店小程序商城3群 1130172339（已满）  
-海风小店小程序商城4群 652317079    
+海风小店小程序商城1群 824781955（满）  
+海风小店小程序商城2群 932101372（满）    
+海风小店小程序商城3群 1130172339（满）  
+海风小店小程序商城4群 652317079   
+
+加我个人微信时，请先star。  
 <img width="500" src="https://raw.githubusercontent.com/iamdarcy/hiolabs/master/git-images/contact.jpg"/>
 
