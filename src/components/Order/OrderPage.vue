@@ -1417,7 +1417,6 @@ export default {
     hidePrintDialog() {
       this.dform.method = 2;
       this.dialogFormVisible = false;
-      console.log("11111");
     },
     goodsPriceChange(value) {
       console.log(value);
@@ -1571,7 +1570,6 @@ export default {
       this.dialogFormVisible = false;
     },
     handleCheckedCitiesChange() {
-      console.log("哈哈");
     },
     onPrintNum() {
       this.axios
@@ -1821,18 +1819,7 @@ export default {
               message: "操作超时，请重试!",
             });
           }
-          // let newWindow = window.open("_blank");   //打开新窗口
-          // let codestr = this.rawHtml;   //获取需要生成pdf页面的div代码
-          // newWindow.document.write(codestr);   //向文档写入HTML表达式或者JavaScript代码
-          // newWindow.document.close();     //关闭document的输出流, 显示选定的数据
-          // newWindow.print();   //打印当前窗口
         });
-      // console.log('这里进来了');
-      // this.axios.post('order/getPrintTest').then((response) => {
-      //     console.log(response);
-      //     this.rawHtml = response.data.data;
-      //     this.printMiandan = true;
-      // });
     },
     deliveryConfirm(id) {
       this.axios

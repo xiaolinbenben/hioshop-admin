@@ -739,7 +739,6 @@
 							}
 						}
 					}),
-					// console.error(that.infoForm.goods_desc);
 					$('#summernote').summernote('code', that.infoForm.goods_desc)
 			},
 		},

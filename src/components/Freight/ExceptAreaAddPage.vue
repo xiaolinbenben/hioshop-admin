@@ -148,7 +148,6 @@
                 });
             },
             onAddTemplate() {
-                console.log('哈哈哈');
                 this.$refs['infoForm'].validate((valid) => {
                     if (valid) {
                         let data = this.tableData[0];

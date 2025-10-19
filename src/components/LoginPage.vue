@@ -58,9 +58,6 @@ export default {
   components: {},
   methods: {
     startLogin() {
-      console.log("<<<<<<<<==================>>>>>>>>");
-      console.log(123123);
-      console.log("<<<<<<<<==================>>>>>>>>");
       this.$refs["form"].validate((valid) => {
         if (!valid) {
           return false;

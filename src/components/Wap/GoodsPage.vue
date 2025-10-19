@@ -103,12 +103,6 @@
                     this.pIndex = 1;
                 }
             },
-//            getList() {
-//                this.axios.get('wap').then((response) => {
-//                    console.log(response.data)
-//                    this.tableData = response.data.data
-//                })
-//            },
             getOnSaleList() {
                 this.axios.get('wap/onsale').then((response) => {
                     console.log(response.data)

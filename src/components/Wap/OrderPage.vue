@@ -242,7 +242,6 @@
                 var clipboard = new Clipboard('.'+classo);
                 clipboard.on('success', function (e) {
                     console.info('Text:', e.text);
-                    console.log('复制成功');
                     clipboard.destroy();
                     e.clearSelection();
                    

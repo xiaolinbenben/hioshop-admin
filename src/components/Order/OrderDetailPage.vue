@@ -440,7 +440,6 @@ export default {
           orderSn: this.infoForm.order_sn,
         })
         .then((response) => {
-          //                    console.log(response.data);
           this.getInfo();
           this.statusVisible = false;
         });
@@ -530,12 +529,6 @@ export default {
         this.axios
           .post("order/saveGoodsList", this.goodsData)
           .then((response) => {
-            //                        console.log(response.data);
-            //                        this.dialogGoodsListVisible = false;
-            //                        this.infoForm.order_sn = response.data.data;
-            //
-            //                        this.addressData = [];
-            //                        this.getInfo();
             this.$router.go(-1);
           });
       } else {
@@ -649,7 +642,6 @@ export default {
   },
   components: { ElButton },
   mounted() {
-    //            console.log(this.$route.query);
     this.infoForm.id = this.$route.query.id || 0;
     this.getInfo();
     this.getAllRegion();

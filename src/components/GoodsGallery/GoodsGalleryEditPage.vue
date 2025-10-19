@@ -100,46 +100,6 @@
 			}
 		},
 		methods: {
-			// goBack(){
-			// 	this.$router.push({name: 'goods_add', query: {id: infoForm.id}})
-			// },
-			//          test() {
-			//              console.log(this.infoForm);
-			//          },
-			//          onSubmitInfo() {
-			//              this.axios.post('goods/galleryEdit', this.infoForm).then((response) => {
-			//                  if (response.data.errno === 0) {
-			//                      this.$message({
-			//                          type: 'success',
-			//                          message: '保存成功'
-			//                      });
-			//                  } else {
-			//                      this.$message({
-			//                          type: 'error',
-			//                          message: '保存失败'
-			//                      })
-			//                  }
-			//              })
-			//          },
-			//          goBackPage() {
-			//              this.$router.go(-1);
-			//          },
-			//          getInfo() {
-			//              console.log(this.infoForm.id)
-			//              if (this.infoForm.id <= 0) {
-			//                  return false
-			//              }
-			//              let that = this
-			//              this.axios.get('goods/galleryList', {
-			//                  params: {
-			//                      id: that.infoForm.id
-			//                  }
-			//              }).then((response) => {
-			//                  console.log(response.data);
-			//                  that.infoForm = response.data;
-			//              })
-			//          }
-
 			getInfo() {
 				console.log(this.infoForm.id)
 				if (this.infoForm.id <= 0) {
@@ -154,7 +114,6 @@
 					console.log(response.data);
 
 					that.infoForm = response.data;
-					// console.log(api)
 					that.banner_list = that.infoForm.data.map(function(v) {
 						let obj = {
 							url: v.img_url,
