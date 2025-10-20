@@ -1,0 +1,18 @@
+:80 {
+	root * /usr/share/caddy/admin
+	
+	# 启用文件服务
+	file_server
+	
+	# SPA 路由支持 - 所有请求都返回 index.html
+	try_files {path} /index.html
+	
+	# 启用 gzip 压缩
+	encode gzip
+	
+	# 日志
+	log {
+		output stdout
+		format console
+	}
+}
